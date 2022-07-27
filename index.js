@@ -19,7 +19,7 @@ const { response } = require('express')
 
 const express = require('express')
 const app = express()
-const port = process.env.port || 3001
+const port = process.env.Port || 3001
 app.use(express.json())
 
 
