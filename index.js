@@ -22,6 +22,8 @@ const app = express()
 const port = process.env.Port || 3001
 app.use(express.json())
 
+const cors = require('cors')
+app.use(cors())
 
 app.get('/', (req, res) => {
   res.send('<h1> Hello World! </h1>')
